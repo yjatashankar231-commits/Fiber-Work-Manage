@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fiber Work Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+<h2>Fiber Work Manager</h2>
+</header>
+
+<div class="container">
+
+<div class="card" onclick="openPage('travel')">
+🚗
+<h3>Travel</h3>
+</div>
+
+<div class="card" onclick="openPage('installation')">
+🛠
+<h3>Installation</h3>
+</div>
+
+<div class="card" onclick="openPage('sr')">
+🔧
+<h3>SR</h3>
+</div>
+
+<div class="card" onclick="openPage('visit')">
+📍
+<h3>Site Visit</h3>
+</div>
+
+<div class="card" onclick="openPage('restore')">
+🏗
+<h3>Site Restore</h3>
+</div>
+
+<div class="card" onclick="openPage('report')">
+📊
+<h3>Daily Report</h3>
+</div>
+
+<div class="card" onclick="exportExcel()">
+📁
+<h3>Export Excel</h3>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
