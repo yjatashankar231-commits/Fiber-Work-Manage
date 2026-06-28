@@ -60,3 +60,129 @@
 
 </body>
 </html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+.topbar{
+    background:#1565c0;
+    color:#fff;
+    padding:18px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:15px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px 15px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card:active{
+    transform:scale(.96);
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.card{
+    font-size:40px;
+}
+
+button{
+    width:100%;
+    background:#1565c0;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    height:90px;
+}
+
+.form-card{
+    background:#fff;
+    margin:15px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.title{
+    text-align:center;
+    font-size:22px;
+    margin-bottom:15px;
+    color:#1565c0;
+}
+
+img.preview{
+    width:100%;
+    border-radius:12px;
+    margin-top:10px;
+}
+
+@media(max-width:600px){
+
+.container{
+grid-template-columns:1fr 1fr;
+}
+
+.card{
+padding:20px 10px;
+}
+
+.card h3{
+font-size:16px;
+}
+
+}
